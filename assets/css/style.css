@@ -1,0 +1,48 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#0b0c12;
+  color:white;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.lang a{
+  margin-left:10px;
+  color:#ff2a2a;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.hero{
+  text-align:center;
+  padding:80px 20px;
+}
+
+h1{
+  font-size:48px;
+  letter-spacing:3px;
+}
+
+.section{
+  padding:40px 20px;
+}
+
+.card{
+  background:rgba(255,255,255,.05);
+  padding:20px;
+  margin:15px 0;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.1);
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  border-top:1px solid rgba(255,255,255,.1);
+}
