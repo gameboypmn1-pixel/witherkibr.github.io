@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script>
+(function(){
+  const saved = localStorage.getItem("wk_lang");
+  const nav = (navigator.language || "en").toLowerCase();
+  const lang = saved ? saved :
+    nav.startsWith("ru") ? "ru" :
+    nav.startsWith("uz") ? "uz" : "en";
+  location.replace("/" + lang + "/");
+})();
+</script>
+</head>
+<body></body>
+</html>
