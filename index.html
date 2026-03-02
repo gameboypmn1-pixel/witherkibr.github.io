@@ -1,17 +1,18 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<script>
-(function(){
-  const saved = localStorage.getItem("wk_lang");
-  const nav = (navigator.language || "en").toLowerCase();
-  const lang = saved ? saved :
-    nav.startsWith("ru") ? "ru" :
-    nav.startsWith("uz") ? "uz" : "en";
-  location.replace("/" + lang + "/");
-})();
-</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WITHERKIBR HUB</title>
+  <meta name="description" content="WITHERKIBR HUB — all-in-one utility tools." />
+  <script>
+    (function () {
+      const saved = localStorage.getItem("wk_lang");
+      const nav = (navigator.language || "en").toLowerCase();
+      const lang = (saved || nav).startsWith("ru") ? "ru" : (saved || nav).startsWith("uz") ? "uz" : "en";
+      location.replace("/" + lang + "/");
+    })();
+  </script>
 </head>
 <body></body>
 </html>
